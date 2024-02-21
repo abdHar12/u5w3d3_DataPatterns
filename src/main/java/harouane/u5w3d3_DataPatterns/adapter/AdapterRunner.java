@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDate;
 
 @Component
-public class AdapterRunning implements CommandLineRunner {
+public class AdapterRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {

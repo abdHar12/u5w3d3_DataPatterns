@@ -15,9 +15,13 @@ public class CompositeRunner implements CommandLineRunner {
         Page page3=new Page();
         Page page4=new Page();
         Page page5=new Page();
+        Page page6=new Page();
+        Page page7=new Page();
+
         Sections section1=new Sections(page1, page2);
         Sections section2=new Sections(page3, page4, page5);
-        Book book= new Book(Arrays.asList(section1, section2), Arrays.asList(new Author("qwer", "rty")), 12.99);
+        Sections section3=new Sections(section2, page6, page7);
+        Book book= new Book(Arrays.asList(section1, section2, section3), Arrays.asList(new Author("qwer", "rty")), 12.99);
         book.print();
     }
 }
